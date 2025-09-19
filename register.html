@@ -21,7 +21,6 @@
                     type="text"
                     placeholder="Username"
                     name="username"
-                    class="input"
                     maxlength="30"
                     style="width: 90%;
                             background: transparent;
@@ -33,7 +32,6 @@
                     type="text"
                     placeholder="E-mail"
                     name="email"
-                    class="input"
                     maxlength="30"
                     style="width: 90%;
                             background: transparent;
@@ -45,18 +43,21 @@
                     type="password"
                     placeholder="Password"
                     name="password"
-                    class="input"
+                    class="passInput"
                     maxlength="30"
                     style="width: 90%;
                             background: transparent;
                             border: none; outline: none;">
 
-                <img 
-                    src="./img/eye-view.png" 
-                    class="eye__view-icon"
-                    style="position: absolute;
-                           right: 15px;
-                           cursor: pointer;">
+                <button class="eye__btn eye__btn--pass" type="button">
+                    <img 
+                        src="./img/eye-view.png" 
+                        class="eye__view-icon">
+                    
+                    <img 
+                        src="./img/eye-hide.png" 
+                        class="eye__hide-icon">
+                </button>
             </div>
 
              <div class="form__input">
@@ -64,23 +65,24 @@
                     type="password"
                     placeholder="Correct password"
                     name="correctpassword"
-                    class="form__input--input"
+                    class="correct__passInput"
                     maxlength="30"
                     style="width: 90%;
                             background: transparent;
                             border: none; outline: none;">
 
-                <img 
-                    src="./img/eye-view.png" 
-                    class="eye__view-icon"
-                    style="position: absolute;
-                           right: 15px;
-                           cursor: pointer;">
+                <button class="eye__btn eye__btn--correctPass" type="button">
+                    <img 
+                        src="./img/eye-view.png" 
+                        class="eye__view-icon">
+                    
+                    <img 
+                        src="./img/eye-hide.png" 
+                        class="eye__hide-icon">
+                </button>
             </div>
 
-            <button 
-                class="form__submit-btn"
-                type="submit">
+            <button class="form__submit-btn" type="submit">
                 Register
             </button>
 

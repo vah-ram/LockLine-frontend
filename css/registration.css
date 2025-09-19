@@ -58,6 +58,36 @@ body {
   box-shadow: 0 0 6px rgba(138, 43, 226, 0.4);
 }
 
+.register__form .eye__btn {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+  z-index: 2;
+}
+
+.eye__btn .eye__view-icon {
+  display: block;
+}
+
+.eye__btn .eye__hide-icon {
+  display: none;
+}
+
+.eye__btn.hiddened .eye__view-icon{
+  display: none;
+}
+
+.eye__btn.hiddened .eye__hide-icon{
+  display: block;
+}
+
 .register__form .form__submit-btn {
   margin-top: 20px;
   padding: 14px;
