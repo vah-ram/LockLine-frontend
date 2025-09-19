@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #2a003f, #000);
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.main__registration {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register__form {
+  width: 450px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in;
+}
+
+.register__form .register__title {
+  font-size: 36px;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: left;
+  background: linear-gradient(90deg, #3f004c, #8b2fff);
+  background-clip: text;
+  color: transparent;
+}
+
+.register__form .form__input {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  margin: 12px 0;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.register__form .form__input:focus {
+  border-color: #6a0dad;
+  box-shadow: 0 0 6px rgba(138, 43, 226, 0.4);
+}
+
+.register__form .form__submit-btn {
+  margin-top: 20px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #3f004c, #8b2fff);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: .7px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.register__form .form__submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(138, 43, 226, 0.4);
+}
+
+.register__form .form__account-text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.form__account-text .form__account-link {
+  color: #6a0dad;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+
+.form__account-text .form__account-link:hover {
+  color: #000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 767px) {
+    .register__form {
+        width: 90%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .register__form .register__title {
+        text-align: center;
+    }
+}

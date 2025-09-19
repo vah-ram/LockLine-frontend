@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/registration.css">
+    <title></title>
+</head>
+<body>
+    <main class="main__registration">
+        <form 
+            id="registerForm"
+            class="register__form">
+            
+            <h2 class="register__title">
+                Sign up
+            </h2>
+
+            <div class="form__input">
+                <input 
+                    type="text"
+                    placeholder="Username"
+                    name="username"
+                    class="input"
+                    maxlength="30"
+                    style="width: 90%;
+                            background: transparent;
+                            border: none; outline: none;">
+            </div>
+
+            <div class="form__input">
+                <input 
+                    type="text"
+                    placeholder="E-mail"
+                    name="email"
+                    class="input"
+                    maxlength="30"
+                    style="width: 90%;
+                            background: transparent;
+                            border: none; outline: none;">
+            </div>
+            
+            <div class="form__input">
+                <input 
+                    type="password"
+                    placeholder="Password"
+                    name="password"
+                    class="input"
+                    maxlength="30"
+                    style="width: 90%;
+                            background: transparent;
+                            border: none; outline: none;">
+
+                <img 
+                    src="./img/eye-view.png" 
+                    class="eye__view-icon"
+                    style="position: absolute;
+                           right: 15px;
+                           cursor: pointer;">
+            </div>
+
+             <div class="form__input">
+                <input 
+                    type="password"
+                    placeholder="Correct password"
+                    name="correctpassword"
+                    class="form__input--input"
+                    maxlength="30"
+                    style="width: 90%;
+                            background: transparent;
+                            border: none; outline: none;">
+
+                <img 
+                    src="./img/eye-view.png" 
+                    class="eye__view-icon"
+                    style="position: absolute;
+                           right: 15px;
+                           cursor: pointer;">
+            </div>
+
+            <button 
+                class="form__submit-btn"
+                type="submit">
+                Register
+            </button>
+
+            <p class="form__account-text">
+                Already have an account `
+                <a 
+                    href="./login.html"
+                    class="form__account-link">Sign in</a>
+            </p>
+
+        </form>
+    </main>
+
+    <script src="./js/register.js"></script>
+</body>
+</html>
